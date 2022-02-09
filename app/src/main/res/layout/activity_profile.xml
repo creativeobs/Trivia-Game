@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="353dp"
+        android:layout_height="599dp"
+        android:alpha="0.8"
+        android:background="@drawable/account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editNote"
+            android:layout_width="153dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="179dp"
+            app:cornerRadius="50dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="229dp"
+            android:fontFamily="@font/product_bold"
+            android:text="Edit notes"
+            android:textAllCaps="false"
+            android:textColor="#476C9B"
+            android:textSize="14dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconTint="#476C9B" />
+
+        <TextView
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="504dp"
+            android:fontFamily="@font/product_bold"
+            android:id="@+id/namePROFILE"
+            android:text="NAME"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="102dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="447dp"
+            android:fontFamily="@font/product_italic"
+            android:text="username"
+            android:id="@+id/usernamePROFILE"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/bioPROFILE"
+            android:layout_width="298dp"
+            android:layout_height="162dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="371dp"
+            android:layout_marginEnd="29dp"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="66dp"
+            android:fontFamily="@font/product_regular"
+            android:text="Add some notes here."
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="334dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="230dp"
+            android:fontFamily="@font/product_bold"
+            android:text="Notes"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="237dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="337dp"
+            android:fontFamily="@font/product_regular"
+            android:text="Score"
+            android:alpha="0.7"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scorePROFILE"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="203dp"
+            android:layout_marginEnd="135dp"
+            android:layout_marginBottom="371dp"
+            android:fontFamily="@font/product_regular"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logoutPROFILE"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.9"
+            app:cornerRadius="50dp"
+            android:fontFamily="@font/product_bold"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:icon="@drawable/ic_baseline_login_24"
+            app:iconTint="@color/Old_Lavender"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/changePassPROFILE"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginBottom="437dp"
+            android:text="change Password"
+            android:fontFamily="@font/product_italic"
+            android:textColor="#476C9B"
+            android:textAlignment="center" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/backArrowPROFILE"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        android:background="@drawable/transparent"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <ImageView
+        android:id="@+id/picturePROFILE"
+        android:layout_width="111dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

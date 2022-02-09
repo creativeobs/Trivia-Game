@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="252dp"
+        android:alpha="0.9"
+        android:background="@drawable/account"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312">
+
+        <TextView
+            android:id="@+id/question_numberGAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/product_bold"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="305dp"
+            android:layout_height="114dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/questionGAME"
+            android:layout_width="305dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="237dp"
+            android:fontFamily="@font/product_bold"
+            android:text="TextView"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timerGAME"
+        android:layout_width="92dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/product_bold"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="328dp"
+        android:alpha="0.9"
+        android:layout_height="205dp"
+        android:background="@drawable/message"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.317">
+
+        <RadioButton
+            android:id="@+id/fchoiceGAME"
+            android:layout_width="267dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/product_regular"
+            android:text="RadioButton"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/schoiceGAME"
+            android:layout_width="265dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/product_regular"
+            android:text="RadioButton"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/tchoiceGAME"
+            android:layout_width="263dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/product_regular"
+            android:text="RadioButton"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/fochoiceGAME"
+            android:layout_width="260dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/product_regular"
+            android:text="RadioButton"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:alpha="0.9"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.597"
+        android:text="NEXT"
+        android:id="@+id/btnNEXTGAME"
+        android:fontFamily="@font/product_bold"
+        android:textColor="@color/black"
+        android:background="@drawable/message"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:iconTint="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/scoreGAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/product_bold"
+        android:text="SCORE: \n0.0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
